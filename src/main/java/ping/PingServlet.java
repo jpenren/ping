@@ -36,8 +36,8 @@ public class PingServlet extends HttpServlet {
             writer.println( json );
         } else {
             resp.setContentType("text/plain");
-            writer.println(data.hostname);
-            writer.println(data.startup);
+            writer.println("Hostmane:" + data.hostname);
+            writer.println("Startup: "+data.startup);
         }
         resp.flushBuffer();
     }
